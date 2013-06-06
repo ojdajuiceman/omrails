@@ -1,0 +1,38 @@
+/* To change font:
+$baseFontFamily: Oxygen
+@import url(http://fonts.googleapis.com/css?family=Oxygen);
+
+Must import from web, google has lots
+*/
+
+$btnPrimaryBackground: green;
+$navbarBackgroundHighlight: green;
+$navbarBackground: green;
+
+
+
+@import 'bootstrap';
+
+body {
+	padding-top: 60px;
+}
+
+@import 'bootstrap-responsive';
+
+/* The lines below don't work, why? */
+/*.header {
+	color: $greyLight;
+
+}*/
+
+.footer {
+	
+	margin-top: 50px;
+	/* color of the footer text */
+	color: $grayLight;
+	
+/* a below refers to the color of the link */
+	a {
+		color: $gray;
+	}
+}
