@@ -1,0 +1,11 @@
+<%= simple_form_for(@pin, html: { class: "form-horizontal"}) do |f| %>
+	<%# , html: { class: "form-horizontal"} makes the change %>
+
+  <%= f.error_notification %>
+  <%= f.input :description, as: :text, input_html: { rows: "3" } %>
+  <%# This allows us to input 3 rows of text to describe pin  %>
+
+  <div class="form-actions">
+    <%= f.button :submit, class: "btn btn-primary" %>
+  </div>
+<% end %>

@@ -1,0 +1,27 @@
+<h1>Listing pins</h1>
+
+<table class="table table-striped">
+  <thead> <%# Table head formatting %>
+    <tr>
+      <th>Description</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+
+  <tbody>
+    <%# Below is ruby code. For each pin, do everything between do and end. %>
+
+    <%# Instead of the line below, just do render @pin %>
+    <%# <% @pins.each do |pin| %>
+
+    <%= render @pins %>
+   
+  </tbody>
+</table>
+
+<br />
+
+<%= link_to 'New Pin', new_pin_path %>
